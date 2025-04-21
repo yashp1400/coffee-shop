@@ -31,7 +31,7 @@ const Cart = ({ cart, setCart, handleChange, setShow, toggleComponent, login }) 
 
     useEffect(() => {
         handlePrice();
-    }, [cart]);
+    }, [cart, handlePrice]);
 
     useEffect(() => {
         if (cart.length === 0) {
